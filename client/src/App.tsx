@@ -5,6 +5,8 @@ import Signup from "pages/signup";
 import { HomePage } from "pages/home";
 import DocumentEditor from "pages/document";
 import Layout from "./layout";
+import Logout from "pages/logout";
+import Home from "components/Home";
 
 function App() {
   return (
@@ -16,9 +18,11 @@ function App() {
               <Route path="/">
                 <Route index element={<HomePage />} />
                 <Route path=":id" element={<DocumentEditor />} />
+                <Route path="/logout" element={<Logout />} />
               </Route>
             </Route>
             <Route element={<RequireGuest />}>
+              <Route path="/home" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
             </Route>

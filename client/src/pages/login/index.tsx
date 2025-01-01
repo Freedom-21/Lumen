@@ -37,7 +37,7 @@ const index: React.FC = () => {
       .then((response) => {
         localStorage.setItem("accessToken", response?.data?.accessToken);
         window.location.replace("/");
-        console.log(response, "thi is response");
+        console.log(response, "this is response");
       })
       .catch((err) => {
         setError(err?.response?.data?.message);
