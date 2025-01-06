@@ -1,212 +1,203 @@
 /* Add styles for your LandingPage */
-
 /* Navigation Styles */
 header {
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  padding: 1rem;
-}
-
-header nav {
-  display: flex;
-  justify-content: center;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-header nav ul li {
-  display: inline-block;
-}
-
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-header nav ul li a:hover {
-  color: #007bff; /* Highlight link on hover */
-}
-
-body {
-  margin-top: 100px; /* Add margin so content doesn't overlap with fixed header */
-}
-
-/* Home Section */
-#home {
-  background-image: url('/public/home1.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay {
-  width: 80vw; /* Full width of the viewport */
-  height: 50vh; /* Full height of the viewport */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  background-image: url('/public/Logos/png/logo-color.png'); /* Your image path */
-  background-size: cover; /* Scale the image to cover the entire area */
-  background-repeat: no-repeat; /* Prevent tiling of the image */
-  background-position: center; /* Center the image */
-  color: rgb(238, 240, 245);
-  text-align: center;
-  position: relative; /* Ensure child absolute positioning works */
-}
-
-.Login-Logout {
-  position: absolute; /* Position relative to the .overlay container */
-  bottom: 1rem; /* Push to 1rem above the bottom of the container */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
-  display: flex;
-  gap: 1rem; /* Space between the buttons */
-}
-
-.intro {
-  margin-top: 1rem;
-}
-
-.intro h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.intro p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.intro .btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #007bff;
-  color: white;
-  margin: 10px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.intro .btn:hover {
-  background-color: #0056b3;
-}
-
-/* Features Section */
-#features {
-  /* We’ll apply the background and color overrides below */
-  padding: 50px;
-  text-align: center;
-}
-
-/* Features Background */
-.features-background {
-  background-image: url('/public/new2.jpg');
-  background-size: cover;
-  background-position: center;
-  /* Make text brighter and easier to read on a dark(ish) background */
-  color: #302d2d;
-  text-shadow: 1px 1px 2px rgba(176, 172, 185, 0.7);
-}
-
-/* Feature Layout */
-.feature {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 3rem 0;
-}
-
-.feature-right .feature-text {
-  order: 1;
-}
-
-.feature-right .feature-image {
-  order: 2;
-}
-
-.feature-left .feature-image {
-  order: 1;
-}
-
-.feature-left .feature-text {
-  order: 2;
-}
-
-.feature-image img {
-  max-width: 400px;
-  height: auto;
-  margin: 0 2rem;
-}
-
-.feature-text {
-  max-width: 500px;
-  text-align: left;
-  margin: 0 2rem;
-}
-
-/* Updated styling for all feature titles and descriptions */
-.user-friendly-title {
-  color: #3082ee !important;
-  font-family: 'Arial', sans-serif;
-  font-size: 2.5rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-}
-
-.user-friendly-desc {
-  font-family: 'Georgia', serif;
-  color: #0c2e42 !important;
-  font-size: 1.5rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-}
-
-/* About Section */
-#about {
-  padding: 50px;
-  text-align: center;
-}
-
-/* About Background */
-.about-background {
-  background-image: url('/public/about.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 50px;
-  color: #0a2333;
-  text-align: center;
-  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); */
-}
-
-/* Contact Links */
-#contact-links a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  color: rgb(39, 17, 238);
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  margin: 0 0.5rem; /* slight spacing */
-}
-
-#contact-links a:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1rem;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  header nav ul li a:hover {
+    color: #007bff; /* Highlight link on hover */
+  }
+  
+  body {
+    margin-top: 100px; /* Add margin so content doesn't overlap with fixed header */
+  }
+  
+  #home {
+      background-image: url('/public/home1.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+    
+  .overlay {
+    width: 80vw; /* Full width of the viewport */
+    height: 50vh; /* Full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background-image: url('/public/Logos/png/logo-color.png'); /* Your image path */
+    background-size: cover; /* Scale the image to cover the entire area */
+    background-repeat: no-repeat; /* Prevent tiling of the image */
+    background-position: center; /* Center the image */
+    color: white;
+    text-align: center;
+    padding-bottom: -1rem;
+  }
+  .overlay {
+    width: 80vw; /* Full width of the viewport */
+    height: 50vh; /* Full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background-image: url('/public/Logos/png/logo-color.png'); /* Your image path */
+    background-size: cover; /* Scale the image to cover the entire area */
+    background-repeat: no-repeat; /* Prevent tiling of the image */
+    background-position: center; /* Center the image */
+    color: white;
+    text-align: center;
+    position: relative; /* Ensure child absolute positioning works */
+  }
+  
+  .Login-Logout {
+    position: absolute; /* Position relative to the .overlay container */
+    bottom: 1rem; /* Push to 1rem above the bottom of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    display: flex;
+    gap: 1rem; /* Space between the buttons */
+  }
+  
+  .intro {
+    margin-top: 1rem;
+  }
+  .intro h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+  }
+    
+  .intro p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+  }
+    
+  .intro .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: #007bff;
+      color: white;
+      margin: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+  }
+    
+  .intro .btn:hover {
+      background-color: #0056b3;
+  }
+  
+  /* Add styles for Features and About sections */
+  #features, #about {
+      padding: 50px;
+      text-align: center;
+  }
+    
+  .feature {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 3rem 0;
+  }
+    
+  .feature-right .feature-text {
+      order: 1;
+  }
+    
+  .feature-right .feature-image {
+      order: 2;
+  }
+    
+  .feature-left .feature-image {
+      order: 1;
+  }
+    
+  .feature-left .feature-text {
+      order: 2;
+  }
+    
+  .feature-image img {
+      max-width: 400px;
+      height: auto;
+      margin: 0 1rem;
+  }
+    
+  .feature-text {
+      max-width: 500px;
+      text-align: left;
+      margin: 0 1rem;
+  }
+    
+  .features-background {
+      background-image: url('/public/features.jpg');
+      background-size: cover;
+      background-position: center;
+  }
+    
+  .about-background {
+      background-image: url('/public/dark-background.jpeg');
+      background-size: cover;
+      background-position: center;
+      padding: 50px;
+      color: white;
+      text-align: center;
+  }
+  
+  /* Updated styling for all feature titles and descriptions */
+  .user-friendly-title {
+    color: #052346; /* Light blueish color */
+    font-family: 'Arial', sans-serif; /* Different font */
+    font-size: 1.8rem;
+  }
+  
+  .user-friendly-desc {
+    font-family: 'Georgia', serif; /* Different font for description */
+    color: #052346; /* Darker color for contrast */
+    font-size: 1.1rem;
+  }
+  
+  #contact-links a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s;
+  }
+    
+  #contact-links a:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Footer */
+  footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
