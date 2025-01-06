@@ -10,7 +10,7 @@ const Logout: React.FC = () => {
 
     // Clear the access token and any other session data
     localStorage.clear();
-    console.log("localStorage cleared");
+    console.log("localStorage cleared succesfully");
 
     // Redirect to the login page
     navigate("/Home");
