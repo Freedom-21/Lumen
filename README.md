@@ -38,27 +38,33 @@ Lumen simplifies real-time collaboration, enabling multiple users to work on the
 
 ## Configure Environment Variables
 
-DB_URI="Your_Database_Connection_String"
-NODE_ENV=your_environment
-PORT=500
-REDIS_HOST="Your_Redis_PubSub_Host"
-REDIS_PASSWORD="Your_Redis_Password"
-REDIS_PORT="Your_Redis_Port"
-SECRET="Your_App_Secret"
+
+   ``` bash
+   DB_URI="Your_Database_Connection_String"
+   NODE_ENV=your_environment
+   PORT=500
+   REDIS_HOST="Your_Redis_PubSub_Host"
+   REDIS_PASSWORD="Your_Redis_Password"
+   REDIS_PORT="Your_Redis_Port"
+   SECRET="Your_App_Secret"
+   ```
 
 ## Running the Application
 
 1. Install Client Dependencies & Start Client
 
+``` bash
 cd client
 npm install
 npm start
+```
 
 2. Install Server Dependencies & Start Server
-
+```bash
 cd ../server
 npm install
 npm start
+```
 
 3. Register an Account Once both client and server are running, open your browser at the specified client URL (typically http://localhost:3000) and sign up using your email address. Choose a unique username to create your account.
 
