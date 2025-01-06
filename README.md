@@ -70,17 +70,17 @@ npm start
 
 ## Usage Guide
 
-Login
+### Login
 
 Access the login page and enter your registered credentials to sign in.
 Create a New Document
 
-On the dashboard, click Create New Document.
+### On the dashboard, click Create New Document.
 Provide a title for your document.
 Invite collaborators by entering their email addresses or usernames.
 Collaborate in Real-Time
 
-Open the newly created document to start editing.
+### Open the newly created document to start editing.
 Collaborators can join the document, and their active editing areas will be highlighted to indicate their presence.
 Manage Collaborations
 
@@ -89,12 +89,14 @@ Keep track of who has access to your documents and easily remove or add new coll
 
 ## Contributing
 Contributions are welcome and encouraged! To contribute:
-
+```` bash
 Fork the repository.
 Create a new branch (git checkout -b feature/YourFeature).
 Commit your changes (git commit -m "Add some feature").
 Push to the branch (git push origin feature/YourFeature).
 Open a Pull Request describing your changes.
+````
+
 We will review your Pull Request as soon as possible. Thank you for helping make Lumen better!
 
 ## Contact
